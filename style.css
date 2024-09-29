@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 * {
   border: 1px solid red;
 }
@@ -12,4 +16,25 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.hero {
+  background-color: #1F2937;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.hero-text p,
+.nav-links li {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.logo {
+  font-size: 28px;
+  color: #F9FAF8;
 }
