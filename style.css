@@ -18,7 +18,8 @@ ul {
   list-style: none;
 }
 
-.hero {
+.hero,
+.footer {
   background-color: #1F2937;
 }
 
@@ -37,4 +38,15 @@ ul {
 .logo {
   font-size: 28px;
   color: #F9FAF8;
+}
+
+.action,
+.action-button {
+  background-color: #3882F6;
+}
+
+.card-content h2 {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
 }
