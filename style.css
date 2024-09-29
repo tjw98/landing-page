@@ -61,3 +61,11 @@ ul {
   font-style: italic;
   color: #1F2937;
 }
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E5E7EB;
+}
