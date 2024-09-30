@@ -54,6 +54,8 @@ ul {
   font-size: 36px;
   color: #1F2937;
   font-weight: 900;
+  flex: 1 1 100%;
+  text-align: center;
 }
 
 .quote {
@@ -77,6 +79,8 @@ ul {
 
 .card-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero {
@@ -100,4 +104,14 @@ ul {
 .hero img {
   flex: 1 1 50%;
   max-width: 100%;
+}
+
+.card {
+  border: 1px solid purple;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img {
+  border: 1px solid red;
 }
