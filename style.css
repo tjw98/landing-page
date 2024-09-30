@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
   display: flex;
@@ -77,8 +81,8 @@ ul {
 
 .hero {
   display: flex;
-  border: 1px red solid;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header {
@@ -87,4 +91,13 @@ ul {
   flex: 1 0 100%;
   align-items: center;
   padding: 20px;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero img {
+  flex: 1 1 50%;
+  max-width: 100%;
 }
