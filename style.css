@@ -19,7 +19,8 @@ ul {
 }
 
 .hero,
-.footer {
+.footer,
+.header {
   background-color: #1F2937;
 }
 
@@ -50,16 +51,17 @@ ul {
   color: #F9FAF8;
 }
 
-.card-content h2 {
+h2 {
   font-size: 36px;
   color: #1F2937;
   font-weight: 900;
-  flex: 1 1 100%;
   text-align: center;
 }
 
 .quote {
   background-color: #E5E7EB;
+  display: flex;
+  padding: 150px 300px;
 }
 
 .quote p {
@@ -80,13 +82,15 @@ ul {
 .card-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 32px;
 }
 
 .hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
+  border: 2px solid orange;
 }
 
 .header {
@@ -95,23 +99,28 @@ ul {
   flex: 1 0 100%;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 .hero-text {
   flex: 1 1 50%;
+  border: 2px solid green;
 }
 
 .hero img {
   flex: 1 1 50%;
-  max-width: 100%;
+  border: 2px solid green;
 }
 
 .card {
-  border: 1px solid purple;
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 25%;
+  justify-content: center;
+  max-width: 150px;
 }
 
-.card img {
-  border: 1px solid red;
+.card p {
+  padding: 0 8px;
+  text-align: center;
 }
