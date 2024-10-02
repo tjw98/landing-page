@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+p, h1, h2, h3, h4, h5, h6, ol, ul {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", Arial, sans-serif;
   display: flex;
@@ -11,8 +16,6 @@ body {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
   gap: 16px;
@@ -44,11 +47,24 @@ ul {
 .action,
 .action-button {
   background-color: #3882F6;
+  color: #F9FAF8;
+  border-radius: 5px;
+}
+
+.action-button {
+  padding: 0px 16px;
+  border:2px solid white;
+}
+
+.hero-action-button {
+  padding: 0px 16px;
 }
 
 .action {
   display: flex;
-  color: #F9FAF8;
+  margin: 50px 100px;
+  padding: 24px 0px;
+  justify-content: space-evenly;
 }
 
 h2 {
@@ -61,7 +77,9 @@ h2 {
 .quote {
   background-color: #E5E7EB;
   display: flex;
-  padding: 150px 300px;
+  flex-direction: column;
+  padding: 50px 100px;
+  border: 1px solid black;
 }
 
 .quote p {
@@ -69,6 +87,7 @@ h2 {
   font-weight: light;
   font-style: italic;
   color: #1F2937;
+  border: 1px solid red;
 }
 
 .footer {
@@ -76,6 +95,7 @@ h2 {
   justify-content: center;
   align-items: center;
   color: #E5E7EB;
+  padding: 32px;
 }
 
 .card-content {
