@@ -33,6 +33,11 @@ ul {
   font-weight: 900;
 }
 
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hero-text p,
 .nav-links li {
   font-size: 18px;
@@ -56,10 +61,6 @@ ul {
   border:2px solid white;
 }
 
-.hero-action-button {
-  padding: 0px 16px;
-}
-
 .action {
   display: flex;
   margin: 50px 100px;
@@ -72,22 +73,24 @@ h2 {
   color: #1F2937;
   font-weight: 900;
   text-align: center;
+  margin: 32px;
 }
 
 .quote {
   background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
-  padding: 50px 100px;
-  border: 1px solid black;
-}
-
-.quote p {
+  padding: 50px 300px;
   font-size: 36px;
   font-weight: light;
   font-style: italic;
   color: #1F2937;
-  border: 1px solid red;
+}
+
+.quote-attribute {
+  font-weight: 700;
+  text-align: right;
+  font-size: 24px;
 }
 
 .footer {
@@ -101,14 +104,16 @@ h2 {
 .card-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 32px;
+  justify-content: center;
+  gap: 48px;
 }
 
 .hero {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid orange;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 200px;
 }
 
 .header {
@@ -119,14 +124,9 @@ h2 {
   padding: 20px;
 }
 
-.hero-text {
-  flex: 1 1 50%;
-  border: 2px solid green;
-}
-
+.hero-text,
 .hero img {
   flex: 1 1 50%;
-  border: 2px solid green;
 }
 
 .card {
@@ -134,10 +134,23 @@ h2 {
   flex-wrap: wrap;
   flex: 1 1 25%;
   justify-content: center;
-  max-width: 150px;
+  max-width: 175px;
+  margin-bottom: 32px;
 }
 
 .card p {
   padding: 0 8px;
   text-align: center;
+  margin-top: 8px;
+}
+
+.card img {
+  border: 5px solid #3882F6;
+  border-radius: 10px;
+}
+
+.hero-text button {
+  border: none;
+  padding: 4px 12px;
+  margin-top: 12px;
 }
